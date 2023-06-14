@@ -20,7 +20,7 @@ h1{
     SELECT ALL SQUARES IN THE ARRAY
 ------------------------------------*/
 .container .squares:nth-child(-n+4) {
-background-image: url("..//images/icons/smileyface2.png");
+background-image: url("./Image/icons2.png");
 color:#fff;
 float: left;
 width: 100px;
@@ -30,9 +30,7 @@ border: 1px solid black;
 border-radius: 25%;
 cursor: pointer;
 transition: transform .5s ease-in-out;
-
 }
-
 /* ------------------------------------------
 SELECT ALL SQUARES PARAGRAPH IN THE ARRAY
 ---------------------------------------------*/
@@ -60,34 +58,55 @@ SELECT ALL SQUARES PARAGRAPH IN THE ARRAY
 .squares:nth-child(4) {
     background:#00b200;
 }
+/* -------------------------------------------
+    HOOVER, TRANSLATE, & TRANSFORM EFFECTS
+----------------------------------------------*/
+.container .squares:nth-child(-n+4) :hover{
+    background-image: url("./Image/icons.png");
+    
+}
 
+.squares:nth-child(1) :hover {
+    background: #13b4ff;
+}
 
+.squares:nth-child(2) :hover {
+    background: #d861af;
+}
+
+.squares:nth-child(3) :hover {
+    background: #81205f;
+}
+
+.squares:nth-child(4) :hover {
+    background: #77b800;
+}
 
 /* -------------------------------------------
     HOOVER, TRANSLATE, & TRANSFORM EFFECTS
 ----------------------------------------------*/
-.container .squares:nth-child(-n+4) :hoover{
-    background-image: url("..//images/icons/smileyface1.png");
+.container .squares:nth-child(-n+4) :hover{
+    background-image: url("./Image/icons2.png");
     transform: scale(.5);
-    animation: race;
+    animation-name: race;
     animation-duration: 2.5s;
-    animation-iteration-count:infinite;
-    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);    
 }
 
-.squares:nth-child(1) :hoover {
+.squares:nth-child(1) :hover {
     background: #13b4ff;
 }
 
-.squares:nth-child(2) :hoover {
+.squares:nth-child(2) :hover {
     background: #d861af;
 }
 
-.squares:nth-child(3) :hoover {
+.squares:nth-child(3) :hover {
     background: #81205f;
 }
 
-.squares:nth-child(4) :hoover {
+.squares:nth-child(4) :hover {
     background: #77b800;
 }
 
@@ -97,7 +116,7 @@ SELECT ALL SQUARES PARAGRAPH IN THE ARRAY
 @keyframes race {
     0%, 100% {
        transform: translateY(0px);
-       background-image: url("..//images/icons/smileyface1.png");
+       background-image: url("./Image/icons2.png");
 }
 50% {
     transform: translateY(330px);
