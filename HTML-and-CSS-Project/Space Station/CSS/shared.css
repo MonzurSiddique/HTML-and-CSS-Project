@@ -33,12 +33,12 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     color: #e91c1c;
-    text-shadow: 2px, 2px, 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px, 2px, 3px rgba(0, 0, 0, 0.5);
 }
 
-h1::after { /*T*his is the underline */
+h1::after { /* This is the underline */
     display: block;
-    content: "";
+    content: " ";
     height: 2px;
     width: 150px;
     background: #e91c1c;
@@ -69,17 +69,13 @@ p {
     line-height: 30px;
     padding-bottom: 15px;
 }
-p {
-    font-weight: 300px;
-    line-height: 30px;
-    padding-bottom: 15px;
-}
+
 .text-center {
     text-align: center;
 }
 
 .heading-padding {
-    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 section {
@@ -116,14 +112,14 @@ section {
 .navbar::after {
     clear: both;
     display: table;
-    content: "";
+    content: " ";
 }
 
 .wrap {
     height: 100%;
     width: 100%;
     position: absolute;
-    /*This ensure that the images cannot 
+    /*This ensures that the images cannot 
     render outside of their container 
     without forcing any scrollbars*/
     overflow: hidden;
@@ -134,8 +130,8 @@ section {
 
 .menu-container {
     max-height: 340px;
-    margin: 0% auto;
-    content: "";
+    margin: 0% auto; /*center alignment*/
+    content: " ";
     /* top: 0;
     left: 0; */
     /* position: absolute; */ /*to the top edge of the screen */
@@ -253,15 +249,12 @@ section {
     font-weight: 600;
     color: #8D8E8F;
     padding: 2% 1% 1% 7%;
-    width: 80%;
-    border-top: 1px solid #090B0D;
-    border-right: 2px solid #424549;
-    border-bottom: 2px solid #424549;
-    border-left: 1px solid #090B0D;
-    margin: 10px 1em;
+    width: 70%;
+    border: 1px solid #808080;
+    margin: 2% auto;
     border-radius: 7px;
-    background: #13161B;
-    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+    background: rgb(227, 222, 222);
+    box-shadow: 2px 3px 3px 0px  rgba(5, 5, 5, 0.3);
     font-family: 'Raleway', sans-serif;   
 }
  
@@ -269,7 +262,7 @@ section {
     font-size: 15px;
     outline: none; 
     font-weight: 600;
-    color: #8D8E8F;
+    color: #8D8E8F; /* this is the color when user starts typing */
     padding: 2% 1% 2% 7%;
     width: 80%;
     border-top: 1px solid #090B0D;
@@ -312,7 +305,7 @@ section {
 }
 
 .submit input[type="submit"] {
-    color: rgba(225, 225, 225);
+    color: rgb(225, 225, 225);
     cursor: pointer;
     border: none;
     font-weight: 900;
@@ -323,7 +316,7 @@ section {
     padding: 7px 0px;
     width: 25%;
     font-size: 18px;
-    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    transition: border-color, 0.3s color, 0.3s background-color 0.3s;
     border-radius: 7px;
     background-color: #797a7b;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);    
