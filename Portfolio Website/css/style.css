@@ -51,7 +51,9 @@ body {
     text-align: center;
     text-transform: uppercase;
     transition: 1s;
-    background-image: url("/Portfolio Website/Image/techimage1.jpg");
+    background: green;
+    
+    
 }
 
 .column_quotation:hover {
