@@ -46,12 +46,12 @@ body {
     font-style: italic;
     font-stretch:semi-expanded;
     text-decoration: double;
-    color: rgb(232, 229, 229);
+    color: rgb(10, 9, 9);
     font-weight: 300;
     text-align: center;
     text-transform: uppercase;
     transition: 1s;
-    background-image: url("/Portfolio Website/Image/techimage.webp");
+    background-image: url("/Portfolio Website/Image/techimage1.jpg");
 }
 
 .column_quotation:hover {
